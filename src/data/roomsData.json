@@ -1,0 +1,222 @@
+[
+    {
+      "id": 1,
+      "roomNumber": "101",
+      "description": "Cozy single bed room with a nice view.",
+      "photos": ["https://i.imgur.com/qgLYOQn.jpeg", "https://i.imgur.com/4quqP9B.jpeg", "https://i.imgur.com/tXBYF1F.jpeg"],
+      "roomType": "Single Bed",
+      "amenities": ["Wifi", "Shower", "Towels"],
+      "price": 200,
+      "discount": 0,
+      "status": "Available"
+    },
+    {
+      "id": 2,
+      "roomNumber": "102",
+      "description": "Comfortable double bed room with modern decor.",
+      "photos": ["https://i.imgur.com/qgLYOQn.jpeg", "https://i.imgur.com/4quqP9B.jpeg", "https://i.imgur.com/tXBYF1F.jpeg"],
+      "roomType": "Double Bed",
+      "amenities": ["AC", "Wifi", "Towels"],
+      "price": 350,
+      "discount": 0,
+      "status": "Booked"
+    },
+    {
+      "id": 3,
+      "roomNumber": "103",
+      "description": "Spacious double superior room with balcony.",
+      "photos": ["https://i.imgur.com/qgLYOQn.jpeg", "https://i.imgur.com/4quqP9B.jpeg", "https://i.imgur.com/tXBYF1F.jpeg"],
+      "roomType": "Double Superior",
+      "amenities": ["AC", "Wifi", "Cleaning", "Towels"],
+      "price": 500,
+      "discount": 0,
+      "status": "Available"
+    },
+    {
+      "id": 4,
+      "roomNumber": "104",
+      "description": "Luxurious suite with king size bed and living area.",
+      "photos": ["https://i.imgur.com/qgLYOQn.jpeg", "https://i.imgur.com/4quqP9B.jpeg", "https://i.imgur.com/tXBYF1F.jpeg"],
+      "roomType": "Suite",
+      "amenities": ["AC", "Wifi", "Breakfast", "Kitchen", "Towels"],
+      "price": 900,
+      "discount": 20,
+      "status": "Booked"
+    },
+    {
+      "id": 5,
+      "roomNumber": "105",
+      "description": "Single bed room perfect for solo travelers.",
+      "photos": ["https://i.imgur.com/qgLYOQn.jpeg", "https://i.imgur.com/4quqP9B.jpeg", "https://i.imgur.com/tXBYF1F.jpeg"],
+      "roomType": "Single Bed",
+      "amenities": ["Wifi", "Towels"],
+      "price": 220,
+      "discount": 0,
+      "status": "Available"
+    },
+    {
+      "id": 6,
+      "roomNumber": "106",
+      "description": "Double bed room with a beautiful sea view.",
+      "photos": ["https://i.imgur.com/qgLYOQn.jpeg", "https://i.imgur.com/4quqP9B.jpeg", "https://i.imgur.com/tXBYF1F.jpeg"],
+      "roomType": "Double Bed",
+      "amenities": ["AC", "Wifi", "Breakfast", "Towels"],
+      "price": 380,
+      "discount": 0,
+      "status": "Available"
+    },
+    {
+      "id": 7,
+      "roomNumber": "107",
+      "description": "Double superior room with a spacious bathroom.",
+      "photos": ["https://i.imgur.com/qgLYOQn.jpeg", "https://i.imgur.com/4quqP9B.jpeg", "https://i.imgur.com/tXBYF1F.jpeg"],
+      "roomType": "Double Superior",
+      "amenities": ["AC", "Wifi", "Cleaning", "Shower", "Towels"],
+      "price": 520,
+      "discount": 0,
+      "status": "Booked"
+    },
+    {
+      "id": 8,
+      "roomNumber": "108",
+      "description": "Elegant suite with private balcony and jacuzzi.",
+      "photos": ["https://i.imgur.com/qgLYOQn.jpeg", "https://i.imgur.com/4quqP9B.jpeg", "https://i.imgur.com/tXBYF1F.jpeg"],
+      "roomType": "Suite",
+      "amenities": ["AC", "Wifi", "Breakfast", "Cleaning", "Kitchen", "Towels"],
+      "price": 1000,
+      "discount": 30,
+      "status": "Available"
+    },
+    {
+      "id": 9,
+      "roomNumber": "109",
+      "description": "Compact single bed room with modern amenities.",
+      "photos": ["https://i.imgur.com/qgLYOQn.jpeg", "https://i.imgur.com/4quqP9B.jpeg", "https://i.imgur.com/tXBYF1F.jpeg"],
+      "roomType": "Single Bed",
+      "amenities": ["Wifi", "Shower"],
+      "price": 210,
+      "discount": 0,
+      "status": "Booked"
+    },
+    {
+      "id": 10,
+      "roomNumber": "110",
+      "description": "Spacious double bed room with work desk.",
+      "photos": ["https://i.imgur.com/qgLYOQn.jpeg", "https://i.imgur.com/4quqP9B.jpeg", "https://i.imgur.com/tXBYF1F.jpeg"],
+      "roomType": "Double Bed",
+      "amenities": ["AC", "Wifi", "Cleaning", "Towels"],
+      "price": 360,
+      "discount": 15,
+      "status": "Available"
+    },
+    {
+      "id": 11,
+      "roomNumber": "111",
+      "description": "Modern double superior room with kitchenette.",
+      "photos": ["https://i.imgur.com/qgLYOQn.jpeg", "https://i.imgur.com/4quqP9B.jpeg", "https://i.imgur.com/tXBYF1F.jpeg"],
+      "roomType": "Double Superior",
+      "amenities": ["AC", "Wifi", "Kitchen", "Towels"],
+      "price": 540,
+      "discount": 0,
+      "status": "Booked"
+    },
+    {
+      "id": 12,
+      "roomNumber": "112",
+      "description": "Grand suite with separate living and dining areas.",
+      "photos": ["https://i.imgur.com/qgLYOQn.jpeg", "https://i.imgur.com/4quqP9B.jpeg", "https://i.imgur.com/tXBYF1F.jpeg"],
+      "roomType": "Suite",
+      "amenities": ["AC", "Wifi", "Breakfast", "Grocery", "Kitchen", "Towels"],
+      "price": 950,
+      "discount": 0,
+      "status": "Available"
+    },
+    {
+      "id": 13,
+      "roomNumber": "113",
+      "description": "Single bed room with easy access to all amenities.",
+      "photos": ["https://i.imgur.com/qgLYOQn.jpeg", "https://i.imgur.com/4quqP9B.jpeg", "https://i.imgur.com/tXBYF1F.jpeg"],
+      "roomType": "Single Bed",
+      "amenities": ["Wifi", "Cleaning", "Towels"],
+      "price": 230,
+      "discount": 0,
+      "status": "Booked"
+    },
+    {
+      "id": 14,
+      "roomNumber": "114",
+      "description": "Double bed room with luxurious bathroom.",
+      "photos": ["https://i.imgur.com/qgLYOQn.jpeg", "https://i.imgur.com/4quqP9B.jpeg", "https://i.imgur.com/tXBYF1F.jpeg"],
+      "roomType": "Double Bed",
+      "amenities": ["AC", "Wifi", "Towels"],
+      "price": 370,
+      "discount": 0,
+      "status": "Available"
+    },
+    {
+      "id": 15,
+      "roomNumber": "115",
+      "description": "Double superior room with extra large bed.",
+      "photos": ["https://i.imgur.com/qgLYOQn.jpeg", "https://i.imgur.com/4quqP9B.jpeg", "https://i.imgur.com/tXBYF1F.jpeg"],
+      "roomType": "Double Superior",
+      "amenities": ["AC", "Wifi", "Breakfast", "Cleaning", "Shower", "Towels"],
+      "price": 550,
+      "discount": 25,
+      "status": "Booked"
+    },
+    {
+      "id": 16,
+      "roomNumber": "116",
+      "description": "Suite with panoramic city view and modern decor.",
+      "photos": ["https://i.imgur.com/qgLYOQn.jpeg", "https://i.imgur.com/4quqP9B.jpeg", "https://i.imgur.com/tXBYF1F.jpeg"],
+      "roomType": "Suite",
+      "amenities": ["AC", "Wifi", "Breakfast", "Cleaning", "Kitchen", "Towels"],
+      "price": 980,
+      "discount": 0,
+      "status": "Available"
+    },
+    {
+      "id": 17,
+      "roomNumber": "117",
+      "description": "Charming single bed room with garden view.",
+      "photos": ["https://i.imgur.com/qgLYOQn.jpeg", "https://i.imgur.com/4quqP9B.jpeg", "https://i.imgur.com/tXBYF1F.jpeg"],
+      "roomType": "Single Bed",
+      "amenities": ["Wifi", "Shower", "Towels"],
+      "price": 240,
+      "discount": 0,
+      "status": "Booked"
+    },
+    {
+      "id": 18,
+      "roomNumber": "118",
+      "description": "Double bed room with elegant interiors.",
+      "photos": ["https://i.imgur.com/qgLYOQn.jpeg", "https://i.imgur.com/4quqP9B.jpeg", "https://i.imgur.com/tXBYF1F.jpeg"],
+      "roomType": "Double Bed",
+      "amenities": ["AC", "Wifi", "Breakfast", "Cleaning", "Towels"],
+      "price": 390,
+      "discount": 10,
+      "status": "Available"
+    },
+    {
+      "id": 19,
+      "roomNumber": "119",
+      "description": "Double superior room with private terrace.",
+      "photos": ["https://i.imgur.com/qgLYOQn.jpeg", "https://i.imgur.com/4quqP9B.jpeg", "https://i.imgur.com/tXBYF1F.jpeg"],
+      "roomType": "Double Superior",
+      "amenities": ["AC", "Wifi", "Cleaning", "Grocery", "Towels"],
+      "price": 570,
+      "discount": 0,
+      "status": "Booked"
+    },
+    {
+      "id": 20,
+      "roomNumber": "120",
+      "description": "Premium suite with exclusive services and decor.",
+      "photos": ["https://i.imgur.com/qgLYOQn.jpeg", "https://i.imgur.com/4quqP9B.jpeg", "https://i.imgur.com/tXBYF1F.jpeg"],
+      "roomType": "Suite",
+      "amenities": ["AC", "Wifi", "Breakfast", "Cleaning", "Grocery", "Kitchen", "Towels"],
+      "price": 1000,
+      "discount": 0,
+      "status": "Available"
+    }
+  ]

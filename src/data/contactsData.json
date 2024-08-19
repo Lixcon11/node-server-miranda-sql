@@ -1,0 +1,202 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "date": "10/06/2023",
+        "email": "john.doe@example.com",
+        "phone": "123-456-7890",
+        "subject": "Great Stay!",
+        "comment": "The hotel was wonderful and the staff were very friendly. Will definitely come back!",
+        "status": "Archived"
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "date": "11/06/2023",
+        "email": "jane.smith@example.com",
+        "phone": "234-567-8901",
+        "subject": "Average Experience",
+        "comment": "The hotel was okay, but the room could have been cleaner. The service was decent.",
+        "status": "Published"
+      },
+      {
+        "id": 3,
+        "name": "Robert Brown",
+        "date": "12/06/2023",
+        "email": "robert.brown@example.com",
+        "phone": "345-678-9012",
+        "subject": "Excellent Service",
+        "comment": "The service at the hotel was outstanding. The staff went above and beyond to make our stay comfortable.",
+        "status": "Archived"
+      },
+      {
+        "id": 4,
+        "name": "Emily Davis",
+        "date": "13/06/2023",
+        "email": "emily.davis@example.com",
+        "phone": "456-789-0123",
+        "subject": "Not Satisfied",
+        "comment": "The room was not as described. It was noisy and the amenities were lacking. Not a great experience.",
+        "status": "Published"
+      },
+      {
+        "id": 5,
+        "name": "Michael Wilson",
+        "date": "14/06/2023",
+        "email": "michael.wilson@example.com",
+        "phone": "567-890-1234",
+        "subject": "Lovely Stay",
+        "comment": "Had a lovely stay at the hotel. The location was perfect and the food was excellent. Would recommend!",
+        "status": "Archived"
+      },
+      {
+        "id": 6,
+        "name": "Sarah Lee",
+        "date": "15/06/2023",
+        "email": "sarah.lee@example.com",
+        "phone": "678-901-2345",
+        "subject": "Fantastic Experience",
+        "comment": "Everything about the hotel was fantastic, from the rooms to the service. Highly recommended!",
+        "status": "Published"
+      },
+      {
+        "id": 7,
+        "name": "David Clark",
+        "date": "16/06/2023",
+        "email": "david.clark@example.com",
+        "phone": "789-012-3456",
+        "subject": "Very Disappointing",
+        "comment": "The hotel did not meet my expectations. The room was dirty and the service was slow.",
+        "status": "Archived"
+      },
+      {
+        "id": 8,
+        "name": "Laura Adams",
+        "date": "17/06/2023",
+        "email": "laura.adams@example.com",
+        "phone": "890-123-4567",
+        "subject": "Just Okay",
+        "comment": "The stay was just okay. Nothing special but not terrible either.",
+        "status": "Published"
+      },
+      {
+        "id": 9,
+        "name": "Peter Johnson",
+        "date": "18/06/2023",
+        "email": "peter.johnson@example.com",
+        "phone": "901-234-5678",
+        "subject": "Wonderful Stay",
+        "comment": "The stay was wonderful. Loved the location and the staff were very accommodating.",
+        "status": "Archived"
+      },
+      {
+        "id": 10,
+        "name": "Nancy Turner",
+        "date": "19/06/2023",
+        "email": "nancy.turner@example.com",
+        "phone": "012-345-6789",
+        "subject": "Not Great",
+        "comment": "The experience was not great. The room was noisy and the staff were not very helpful.",
+        "status": "Published"
+      },
+      {
+        "id": 11,
+        "name": "James Martin",
+        "date": "20/06/2023",
+        "email": "james.martin@example.com",
+        "phone": "123-456-7890",
+        "subject": "Good Value",
+        "comment": "Good value for the money. The hotel was clean and the staff were friendly.",
+        "status": "Archived"
+      },
+      {
+        "id": 12,
+        "name": "Susan White",
+        "date": "21/06/2023",
+        "email": "susan.white@example.com",
+        "phone": "234-567-8901",
+        "subject": "Not Worth the Price",
+        "comment": "The hotel was overpriced for what it offered. Not worth the money.",
+        "status": "Published"
+      },
+      {
+        "id": 13,
+        "name": "Chris Thompson",
+        "date": "22/06/2023",
+        "email": "chris.thompson@example.com",
+        "phone": "345-678-9012",
+        "subject": "Amazing Experience",
+        "comment": "Amazing experience! The staff were great and the facilities were top-notch.",
+        "status": "Archived"
+      },
+      {
+        "id": 14,
+        "name": "Barbara Baker",
+        "date": "23/06/2023",
+        "email": "barbara.baker@example.com",
+        "phone": "456-789-0123",
+        "subject": "Not Happy",
+        "comment": "Not happy with the stay. The room was not clean and the service was poor.",
+        "status": "Published"
+      },
+      {
+        "id": 15,
+        "name": "Paul Roberts",
+        "date": "24/06/2023",
+        "email": "paul.roberts@example.com",
+        "phone": "567-890-1234",
+        "subject": "Loved It",
+        "comment": "Loved the hotel. The atmosphere was great and the staff were very friendly.",
+        "status": "Archived"
+      },
+      {
+        "id": 16,
+        "name": "Jennifer Moore",
+        "date": "25/06/2023",
+        "email": "jennifer.moore@example.com",
+        "phone": "678-901-2345",
+        "subject": "Would Not Recommend",
+        "comment": "Would not recommend. The room was outdated and the service was lacking.",
+        "status": "Published"
+      },
+      {
+        "id": 17,
+        "name": "Brian Taylor",
+        "date": "26/06/2023",
+        "email": "brian.taylor@example.com",
+        "phone": "789-012-3456",
+        "subject": "Great Location",
+        "comment": "Great location and the hotel was very clean. The staff were also very helpful.",
+        "status": "Archived"
+      },
+      {
+        "id": 18,
+        "name": "Lisa Anderson",
+        "date": "27/06/2023",
+        "email": "lisa.anderson@example.com",
+        "phone": "890-123-4567",
+        "subject": "Poor Service",
+        "comment": "Poor service. The staff were not attentive and the room was not as described.",
+        "status": "Published"
+      },
+      {
+        "id": 19,
+        "name": "Matthew Lewis",
+        "date": "28/06/2023",
+        "email": "matthew.lewis@example.com",
+        "phone": "901-234-5678",
+        "subject": "Excellent Hotel",
+        "comment": "Excellent hotel with great amenities. The staff were very friendly and helpful.",
+        "status": "Archived"
+      },
+      {
+        "id": 20,
+        "name": "Karen Hall",
+        "date": "29/06/2023",
+        "email": "karen.hall@example.com",
+        "phone": "012-345-6789",
+        "subject": "Not Clean",
+        "comment": "The room was not clean and the service was subpar. Very disappointed.",
+        "status": "Published"
+      }
+]
