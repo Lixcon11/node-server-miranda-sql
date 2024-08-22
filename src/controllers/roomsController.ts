@@ -1,5 +1,5 @@
 import { createController } from "../utils/createController"
-import { Room } from "../models/roomSchema"
+import { Room } from "../models/Room"
 
 const roomsController = () => createController("rooms", Room);
 

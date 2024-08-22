@@ -1,38 +1,48 @@
-import { Model } from 'mongoose';
+import { Model, ModelStatic } from 'sequelize';
 import { DataState, UserState } from "../types/DataState";
 import bcrypt from 'bcryptjs';
 
 class Data<T extends DataState> {
-    private model: Model<T>;
+    private model: ModelStatic<Model<T>>;
 
-    constructor(model: Model<T>) {
+    constructor(model: ModelStatic<Model<T>>) {
         this.model = model;
     }
 
     async fetchAll(): Promise<T[]> {
-        return this.model.find().exec();
+        const records = await this.model.findAll();
+        return records.map(record => record.get() as T);
     }
 
     async getById(id: string): Promise<T | null> {
-        return this.model.findById(id).exec();
+        const record = await this.model.findByPk(id);
+        return record ? record.get() as T : null;
     }
+
     async create(item: T): Promise<T> {
-        console.log(item)
         if (this.isUserState(item)) {
             item.password = await bcrypt.hash(item.password, 10);
         }
-        const newItem = new this.model(item);
-        const savedItem = await newItem.save();
-        return savedItem.toObject() as T;
+        const record = await this.model.create(item as any);
+        return record.get() as T;
     }
 
-    async update(item: Partial<T> & { _id: string }): Promise<T | null> {
-        return this.model.findByIdAndUpdate(item._id, item, { new: true }).exec();
+    async update(item: Partial<T> & { id: string }): Promise<T | null> {
+        const record = await this.model.findByPk(item.id);
+        if (record) {
+            await record.update(item);
+            return record.get() as T;
+        }
+        return null;
     }
 
     async delete(id: string): Promise<string> {
-        await this.model.findByIdAndDelete(id).exec();
-        return id;
+        const record = await this.model.findByPk(id);
+        if (record) {
+            await record.destroy();
+            return id;
+        }
+        return '';
     }
 
     private isUserState = (item: any): item is UserState => {
@@ -50,4 +60,4 @@ class Data<T extends DataState> {
     }
 }
 
-export { Data }
+export { Data };

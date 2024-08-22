@@ -1,10 +1,10 @@
 import "dotenv/config";
 import mongoose, { Model } from 'mongoose';
 import { faker } from '@faker-js/faker';
-import { User } from './models/userSchema';
-import { Room } from './models/roomSchema';
-import { Booking } from './models/bookingSchema';
-import { Contact } from './models/contactSchema';
+import { User } from './models/User';
+import { Room } from './models/Room';
+import { Booking } from './models/Booking';
+import { Contact } from './models/Contact';
 import bcrypt from 'bcryptjs';
 
 const seed = async () => {
