@@ -65,4 +65,4 @@ type UserState = {
 
 type DataState = UserState | ContactState | BookingState | RoomState
 
-export { RoomState, BookingState, ContactState, UserState, DataState }
+export { RoomState, BookingState, ContactState, UserState, DataState, Amenitie }

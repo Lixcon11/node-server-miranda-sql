@@ -1,82 +1,66 @@
 import { DataTypes, Model, Optional } from 'sequelize';
 import { sequelize } from '../database';
-import { Room } from './Room'; // Assuming a relationship with Room
+import { BookingState, RoomState } from '../types/DataState';
 
-interface BookingAttributes {
-    id: number;
-    name: string;
-    orderDate: string;
-    checkInDate: string;
-    checkOutDate: string;
-    specialRequest: string;
-    roomId: number;
-    status: 'Check In' | 'Check Out' | 'In Progress';
+interface BookingAttributes extends BookingState {
+  id: number;
+  room: RoomState;
 }
 
 interface BookingCreationAttributes extends Optional<BookingAttributes, 'id'> {}
 
-class Booking extends Model<BookingAttributes, BookingCreationAttributes> implements BookingAttributes {
-    public id!: number;
-    public name!: string;
-    public orderDate!: string;
-    public checkInDate!: string;
-    public checkOutDate!: string;
-    public specialRequest!: string;
-    public roomId!: number;
-    public status!: 'Check In' | 'Check Out' | 'In Progress';
+export class Booking extends Model<BookingAttributes, BookingCreationAttributes> implements BookingAttributes {
+  public id!: number;
+  public name!: string;
+  public orderDate!: string;
+  public checkInDate!: string;
+  public checkOutDate!: string;
+  public specialRequest!: string;
+  public room!: RoomState;
+  public status!: BookingState['status'];
 
-    public readonly createdAt!: Date;
-    public readonly updatedAt!: Date;
+  public readonly createdAt!: Date;
+  public readonly updatedAt!: Date;
 }
 
 Booking.init(
-    {
-        id: {
-            type: DataTypes.INTEGER.UNSIGNED,
-            autoIncrement: true,
-            primaryKey: true,
-        },
-        name: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        orderDate: {
-            type: DataTypes.DATEONLY,
-            allowNull: false,
-        },
-        checkInDate: {
-            type: DataTypes.DATEONLY,
-            allowNull: false,
-        },
-        checkOutDate: {
-            type: DataTypes.DATEONLY,
-            allowNull: false,
-        },
-        specialRequest: {
-            type: DataTypes.TEXT,
-            allowNull: true,
-        },
-        roomId: {
-            type: DataTypes.INTEGER.UNSIGNED,
-            allowNull: false,
-            references: {
-                model: Room,
-                key: 'id',
-            },
-        },
-        status: {
-            type: DataTypes.ENUM('Check In', 'Check Out', 'In Progress'),
-            allowNull: false,
-        },
+  {
+    id: {
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
+      primaryKey: true,
     },
-    {
-        sequelize,
-        tableName: 'bookings',
-        timestamps: true,
-    }
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    orderDate: {
+      type: DataTypes.DATE,
+      allowNull: false,
+    },
+    checkInDate: {
+      type: DataTypes.DATE,
+      allowNull: false,
+    },
+    checkOutDate: {
+      type: DataTypes.DATE,
+      allowNull: false,
+    },
+    specialRequest: {
+      type: DataTypes.TEXT,
+      allowNull: true,
+    },
+    room: {
+      type: DataTypes.JSON,
+      allowNull: false,
+    },
+    status: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+  },
+  {
+    sequelize,
+    tableName: 'bookings',
+  }
 );
-
-Room.hasMany(Booking, { foreignKey: 'roomId' });
-Booking.belongsTo(Room, { foreignKey: 'roomId' });
-
-export { Booking };

@@ -1,3 +1,4 @@
+/*
 import "dotenv/config";
 import mongoose, { Model } from 'mongoose';
 import { faker } from '@faker-js/faker';
@@ -90,3 +91,4 @@ const generateNewId = async <T>(model: Model<T>): Promise<number> => {
 }
 
 seed().catch(err => console.error(err));
+*/
