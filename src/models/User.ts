@@ -28,7 +28,6 @@ class User extends Model<UserAttributes, UserCreationAttributes> implements User
     public status!: 'Active' | 'Inactive';
     public password!: string;
 
-    // Timestamps
     public readonly createdAt!: Date;
     public readonly updatedAt!: Date;
 }

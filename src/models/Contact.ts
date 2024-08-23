@@ -24,7 +24,6 @@ class Contact extends Model<ContactAttributes, ContactCreationAttributes> implem
     public comment!: string;
     public status!: 'Published' | 'Archived';
 
-    // Timestamps
     public readonly createdAt!: Date;
     public readonly updatedAt!: Date;
 }

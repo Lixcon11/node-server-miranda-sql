@@ -5,7 +5,6 @@ import { DataState } from "../types/DataState";
 const dataController = <T extends DataState>(service: Data<T>): Router => {
     const router = express.Router();
 
-    // GET all items
     router.get("/", async (_req: Request, res: Response) => {
         try {
             const items = await service.fetchAll();
@@ -16,7 +15,6 @@ const dataController = <T extends DataState>(service: Data<T>): Router => {
         }
     });
 
-    // GET a single item by ID
     router.get("/:id", async (req: Request, res: Response) => {
         try {
             const id = req.params.id;
@@ -31,7 +29,6 @@ const dataController = <T extends DataState>(service: Data<T>): Router => {
         }
     });
 
-    // POST a new item
     router.post("/", async (req: Request, res: Response) => {
         try {
             const input = req.body;
@@ -43,11 +40,10 @@ const dataController = <T extends DataState>(service: Data<T>): Router => {
         }
     });
 
-    // PATCH (update) an item by ID
     router.patch("/:id", async (req: Request, res: Response) => {
         try {
             const id = req.params.id;
-            const input = { ...req.body, id };  // Include the ID in the item to update
+            const input = { ...req.body, id };
             const updatedItem = await service.update(input);
             if (!updatedItem) {
                 return res.status(404).json({ error: "Item not found" });
@@ -59,7 +55,6 @@ const dataController = <T extends DataState>(service: Data<T>): Router => {
         }
     });
 
-    // DELETE an item by ID
     router.delete("/:id", async (req: Request, res: Response) => {
         try {
             const id = req.params.id;

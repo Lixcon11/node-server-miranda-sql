@@ -26,7 +26,6 @@ class Room extends Model<RoomAttributes, RoomCreationAttributes> implements Room
     public discount!: number;
     public status!: 'Available' | 'Booked';
 
-    // Timestamps
     public readonly createdAt!: Date;
     public readonly updatedAt!: Date;
 }

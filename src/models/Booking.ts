@@ -25,7 +25,6 @@ class Booking extends Model<BookingAttributes, BookingCreationAttributes> implem
     public roomId!: number;
     public status!: 'Check In' | 'Check Out' | 'In Progress';
 
-    // Timestamps
     public readonly createdAt!: Date;
     public readonly updatedAt!: Date;
 }
